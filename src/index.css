@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  background-color: #343541;
+
+  display: flex;
+  height: 100vh;
+}
+
+.side-bar {
+  color: #dddde4;
+  background-color: #202123;
+  width: 244px;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+button {
+  border: solid 1px rgba(255, 255, 255, 0.2);
+  background-color: transparent;
+  border-radius: 0.5rem;
+  padding: 10px;
+  margin: 10px;
+
+  color: #ececf1;
+  font-size: 0.9rem;
+
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  background-color: #2b2c2f;
+}
+
+.plus {
+  font-size: 1.2rem;
+}
+
+.history {
+  padding: 5px;
+  margin: 5px;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: scroll;
+}
+
+.history li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  margin: 0;
+}
+
+.record {
+  padding-left: 10px;
+}
+
+nav {
+  border-top: solid 1px rgba(255, 255, 255, 0.2);
+  padding: 0 30px;
+  margin: 5px;
+  font-size: 0.9rem;
+}
+
+.main {
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  overflow: scroll;
+  scroll-padding-top: 35px;
+}
+
+h1 {
+  color: #000;
+  font-size: 33px;
+  font-weight: 600;
+  padding: 200px 0;
+
+  flex-grow: 2;
+}
+
+#output {
+  color: #474853;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  max-height: 500px;
+}
+
+#output .container {
+  width: 100%;
+  border-bottom: 1px solid #eeeeef;
+  display: flex;
+  justify-content: center;
+}
+
+#output li {
+  list-style-type: none;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  margin: auto 0;
+  padding: 35px;
+}
+
+#output li p {
+  color: #374151;
+  font-size: 1.2rem;
+  text-align: left;
+  margin: 0;
+}
+
+#output .role {
+  margin-right: 20px;
+  width: 2rem;
+  height: 2rem;
+  background-size: cover;
+  border-radius: 0.2rem;
+}
+
+.container .user {
+  background-image: url(./assets/Cat03.jpg);
+}
+
+.container .assistant {
+  background-image: url(./assets/chatgpt.jpeg);
+}
+
+.assistant-msg {
+  background-color: #f7f7f8;
+}
+
+.bottom-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+  width: 80%;
+  max-width: 380px;
+
+  position: fixed;
+  bottom: 25px;
+}
+
+#submit {
+  position: absolute;
+  right: -15px;
+  bottom: 0.3rem;
+
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  background-color: #fff;
+  width: 100%;
+  font-size: 1rem;
+  padding: 12px 15px;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+input:focus {
+  outline: none;
+}
+
+.title {
+  width: 100%;
+  margin: 0;
+  padding: 25px;
+  border-bottom: 1px solid #eeeeef;
+}
+
+.bottom-space {
+  width: 100%;
+  height: 120 px;
+}
